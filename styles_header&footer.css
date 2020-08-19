@@ -1,0 +1,145 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  padding: 15px 0;
+}
+
+.header__logo {
+  position: relative;
+  z-index: 1;
+  flex: 0 0 auto;
+}
+
+.header__action {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+}
+
+.header__menu {
+  flex: 1 1 auto;
+  display: flex;
+  align-items: center;
+}
+
+.header__contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__nav {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+  font-size: 14px;
+  line-height: 16px;
+  flex-grow: 1;
+  left: 0;
+  right: 0;
+}
+
+.nav__link {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+
+.nav__link {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  padding: 10px 16px;
+  font-weight: 400;
+  text-decoration: none;
+  color: inherit;
+  transition: 125ms;
+}
+
+.section_theme_header {
+  background-color: rgb(0, 0, 0, 0.9);
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.checkbtn {
+  color: white;
+  float: right;
+  cursor: pointer;
+  display: none;
+}
+
+#menu-button {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .checkbtn {
+    display: block;
+  }
+  .header__action {
+    position: fixed;
+    display: block;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(0, 0, 0, 0.9);
+    top: 73px;
+    border-top: 1px solid rgb(255, 255, 255);
+    padding: 20px 0;
+    right: -100%;
+    text-align: center;
+    transition: all 0.7s;
+  }
+
+  .header__nav {
+    flex-direction: column;
+    align-items: center;
+    font-size: 18px;
+    line-height: 1.25;
+    padding: 0 0 15px 0;
+  }
+
+  #menu-button:checked + .header__action {
+    right: 0;
+  }
+}
+
+.section_theme_footer {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+.footer_nav {
+  display: block;
+  padding-inline-start: 0px;
+}
+
+.footer__block {
+  position: relative;
+  margin-bottom: 20px;
+  min-width: 250px;
+}
+
+.footer__logo {
+  position: absolute;
+  top: -18px;
+  left: -3px;
+}
+
+.footer__title {
+  margin: 0 0 10px 0;
+}
+
+.footer__text {
+  color: #828282;
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+  text-align: justify;
+}

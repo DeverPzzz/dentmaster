@@ -4,13 +4,17 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <link rel="stylesheet" href="/styles_header&footer.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link rel="stylesheet" href="https://use.typekit.net/tkn4gna.css" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Стоматология ДентМастер</title>
   </head>
@@ -24,56 +28,61 @@
               <img src="/img/logo_with_name.svg" alt="Лого ДентМастер" />
             </a>
           </div>
-          <nav class="header__menu">
-            <ul class="nav header__nav nobullets">
-              <li class="nav__item text_hover">
-                <a class="nav__link" href="#services" title="Услуги ДентМастер">
-                  УСЛУГИ
-                </a>
-              </li>
-              <li class="nav__item text_hover">
-                <a class="nav__link" href="#contacts" title="Цены ДентМастер">
-                  ЦЕНЫ
-                </a>
-              </li>
-              <li class="nav__item text_hover">
-                <a class="nav__link" href="#doctors" title="Врачи ДентМастер">
-                  ВРАЧИ
-                </a>
-              </li>
-              <li class="nav__item text_hover">
-                <a
-                  class="nav__link"
-                  href="#contacts"
-                  title="Контакты ДентМастер"
-                >
-                  КОНТАКТЫ
-                </a>
-              </li>
-            </ul>
-          </nav>
-          <div class="header__contacts">
-            <ul class="nav nobullets">
-              <li class="nav__item">
-                <a
-                  class="nav__link"
-                  href="<!--НАПИШИ-->"
-                  title="Телефон ДентМастер"
-                >
-                  +7 (960) 454 54 54
-                </a>
-              </li>
-              <li class="nav__item">
-                <a
-                  class="nav__link button"
-                  href="<!--НАПИШИ-->"
-                  title="Записаться на прием"
-                >
-                  <span class="button__content"> Записаться </span>
-                </a>
-              </li>
-            </ul>
+          <input type="checkbox" id="menu-button" />
+          <div class="header__action">
+            <nav class="header__menu">
+              <ul class="nav header__nav nobullets">
+                <li class="nav__item text_hover">
+                  <a
+                    class="nav__link"
+                    href="#services"
+                    title="Услуги ДентМастер"
+                  >
+                    УСЛУГИ
+                  </a>
+                </li>
+                <li class="nav__item text_hover">
+                  <a class="nav__link" href="#contacts" title="Цены ДентМастер">
+                    ЦЕНЫ
+                  </a>
+                </li>
+                <li class="nav__item text_hover">
+                  <a class="nav__link" href="#doctors" title="Врачи ДентМастер">
+                    ВРАЧИ
+                  </a>
+                </li>
+                <li class="nav__item text_hover">
+                  <a
+                    class="nav__link"
+                    href="#contacts"
+                    title="Контакты ДентМастер"
+                  >
+                    КОНТАКТЫ
+                  </a>
+                </li>
+              </ul>
+            </nav>
+            <div class="header__contacts">
+              <ul class="header__nav nobullets">
+                <li class="nav__item">
+                  <div class="nav__link" title="Телефон ДентМастер">
+                    +7 (960) 454 54 54
+                  </div>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link button"
+                    href="<!--НАПИШИ-->"
+                    title="Записаться на прием"
+                  >
+                    <span class="button__content"> Записаться </span>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
+          <label for="menu-button" class="checkbtn">
+            <img src="/img/menu.svg" />
         </header>
       </div>
     </section>
@@ -84,7 +93,7 @@
           <div class="intro">
             <div class="intro__left">
               <div class="intro__title title_break title_1">
-                БОЛЕЕ 15 ЛЕТ НА СТРАЖЕ <br />ЗДОРОВЬЯ ВАШИХ ЗУБОВ
+                Более 15 лет на страже <br />здоровья ваших зубов
               </div>
               <div class="intro__desc title_break title_2">
                 40000 пациентов ушли от нас с красивой улыбкой
@@ -290,7 +299,7 @@
           </div>
           <div class="doctors-carousel">
             <div class="doctors-carousel__wrapper">
-              <div class="siema">
+              <div class="doctors">
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
@@ -403,6 +412,27 @@
         </div>
       </section>
 
+      <section class="our-works">
+        <div class="desease-img">
+          <img src="/img/services/caries.jpeg" alt="Кариес" />
+        </div>
+        <div class="desease-img">
+          <img src="/img/services/caries.jpeg" alt="Кариес" />
+        </div>
+        <div class="desease-img">
+          <img src="/img/services/caries.jpeg" alt="Кариес" />
+        </div>
+        <div class="desease-img">
+          <img src="/img/services/caries.jpeg" alt="Кариес" />
+        </div>
+        <div class="desease-img">
+          <img src="/img/services/caries.jpeg" alt="Кариес" />
+        </div>
+        <div class="desease-img">
+          <img src="/img/services/caries.jpeg" alt="Кариес" />
+        </div>
+      </section>
+
       <section id="contacts" class="section section_theme_blueblock">
         <div class="container section__inner">
           <div class="section__title">
@@ -430,6 +460,15 @@
                   8 (960) 454 54 54<br />8 (960) 454 54 54
                 </div>
               </div>
+              <div class="map__textblock">
+                <a
+                  class="button text_1"
+                  href="<!--НАПИШИ-->"
+                  title="Онлайн-запись"
+                >
+                  <span class="button__content"> Записаться онлайн </span>
+                </a>
+              </div>
             </div>
             <div class="content-grid__column map">
               <script
@@ -448,7 +487,7 @@
       <div class="container section__inner">
         <footer class="footer">
           <div class="content-grid">
-            <div class="content-grid__column justify-right">
+            <div class="content-grid__column footer__block align_items-left">
               <a class="footer__logo" href="/" title="ДентМастер">
                 <img
                   src="/img/logo_with_name.svg"
@@ -456,93 +495,101 @@
                   width="170"
                 />
               </a>
+              <ul class="footer_nav nobullets" style="margin-top: 28px;">
+                <li class="footer__text">
+                  ИНН: 7901531881
+                </li>
+                <li class="footer__text">
+                  КПП: 790101001
+                </li>
+                <li class="footer__text">
+                  ОГРН: 1087901000110
+                </li>
+                <li class="footer__text">
+                  от 21.01.2008г
+                </li>
+              </ul>
             </div>
-            <div class="content-grid__column justify-right">
-              <div class="footer_block">
-                <div class="footer__title">Навигация</div>
-                <ul class="footer_nav nobullets">
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="О нас ДентМастер"
-                    >
-                      О нас
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="Услуги ДентМастер"
-                    >
-                      Наши услуги
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="Цены ДентМастер"
-                    >
-                      Прайс-лист
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="Юр.информация ДентМастер"
-                    >
-                      Юр.информация
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div class="content-grid__column footer__block align_items-left">
+              <div class="footer__title">Навигация</div>
+              <ul class="footer_nav nobullets">
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="О нас ДентМастер"
+                  >
+                    О нас
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="Услуги ДентМастер"
+                  >
+                    Наши услуги
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="Цены ДентМастер"
+                  >
+                    Прайс-лист
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="Юр.информация ДентМастер"
+                  >
+                    Юр.информация
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="content-grid__column justify-right">
-              <div class="footer_block">
-                <div class="footer__title">Подписывайтесь</div>
-                <ul class="footer_nav nobullets">
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="Instagram ДентМастер"
-                    >
-                      Instagram
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="Facebook ДентМастер"
-                    >
-                      Facebook
-                    </a>
-                  </li>
-                  <li>
-                    <a
-                      class="footer__text"
-                      href="<!--НАПИШИ-->"
-                      title="ВКонтакте ДентМастер"
-                    >
-                      ВКонтакте
-                    </a>
-                  </li>
-                </ul>
-              </div>
+            <div class="content-grid__column footer__block align_items-left">
+              <div class="footer__title">Подписывайтесь</div>
+              <ul class="footer_nav nobullets">
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="Instagram ДентМастер"
+                  >
+                    Instagram
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="Facebook ДентМастер"
+                  >
+                    Facebook
+                  </a>
+                </li>
+                <li>
+                  <a
+                    class="footer__text"
+                    href="<!--НАПИШИ-->"
+                    title="ВКонтакте ДентМастер"
+                  >
+                    ВКонтакте
+                  </a>
+                </li>
+              </ul>
             </div>
-            <div class="content-grid__column justify-right">
-              <div class="footer_block">
-                <div class="footer__title">© 2014-2020. Все права защищены</div>
-                <div class="footer__text">
-                  Сайт не является СМИ. Информация о перечне предоставляемых
-                  платных медицинских услуг размещена с целью информирования,
-                  согласно п.1 ст.10 Федерального закона «О защите прав
-                  потребителей» от 07.02.1992 №2300-1
-                </div>
+            <div class="content-grid__column footer__block align_items-left">
+              <div class="footer__title">© 2014-2020. Все права защищены</div>
+              <div class="footer__text">
+                Сайт не является СМИ. Информация о перечне предоставляемых
+                платных медицинских услуг размещена с целью информирования,
+                согласно п.1 ст.10 Федерального закона «О защите прав
+                потребителей» от 07.02.1992 №2300-1
               </div>
             </div>
           </div>
@@ -554,13 +601,13 @@
 
     <script src="/siema-1.5.1/dist/siema.min.js"></script>
     <script>
-      const mySiema = new Siema({
-        selector: ".siema",
+      const doctors = new Siema({
+        selector: ".doctors",
         duration: 200,
         easing: "ease-out",
         perPage: {
-          800: 2, // 2 items for viewport wider than 800px
-          1240: 3, // 3 items for viewport wider than 1240px
+          850: 2, // 2 items for viewport wider than 800px
+          1140: 3, // 3 items for viewport wider than 1240px
         },
         startIndex: 0,
         draggable: true,
@@ -574,8 +621,31 @@
 
       const prev = document.querySelector(".prev");
       const next = document.querySelector(".next");
-      prev.addEventListener("click", () => mySiema.prev());
-      next.addEventListener("click", () => mySiema.next());
+      prev.addEventListener("click", () => doctors.prev());
+      next.addEventListener("click", () => doctors.next());
+
+      const ourWorks = new Siema({
+        selector: ".our-works",
+        duration: 250,
+        easing: "ease-out",
+        perPage: {
+          550: 1, // 1 items for viewport wider than 800px
+          850: 2, // 2 items for viewport wider than 800px
+          1140: 3, // 3 items for viewport wider than 1240px
+          1440: 4, // 3 items for viewport wider than 1240px
+          1740: 5, // 3 items for viewport wider than 1240px
+          2040: 6, // 3 items for viewport wider than 1240px
+        },
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+      });
+      setInterval(() => ourWorks.next(), 2500);
     </script>
   </body>
 </html>
