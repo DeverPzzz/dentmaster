@@ -1,6 +1,7 @@
 body {
   margin: 0;
-  font-family: "Montserrat", sans-serif;
+  font-family: montserrat, sans-serif;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -14,20 +15,20 @@ section {
 
 ul {
   display: block;
-    margin-block-start: 0em;
-    margin-block-end: 0em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
+  margin-block-start: 0em;
+  margin-block-end: 0em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
 }
 
 .section_theme_intro {
-  background: rgb(0, 0, 0);
+  background: rgb(241, 249, 251);
   background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 1) 0%,
-    rgba(0, 0, 0, 1) 15%,
-    rgba(49, 49, 49, 1) 100%
+    162deg,
+    rgba(241, 249, 251, 1) 71%,
+    rgba(219, 219, 221, 1) 100%
   );
+  color: #4f4f4f;
 }
 
 .margin-right {
@@ -49,8 +50,8 @@ ul {
   color: #ffffff;
 }
 
-.section_theme_greyblock {
-  background-color: #e0e0e0;
+.section_theme_lightgreenblock {
+  background-color: #f1f9fb;
   color: #333333;
 }
 
@@ -80,6 +81,7 @@ a:-webkit-any-link {
   justify-content: center;
   box-sizing: border-box;
   border: 0;
+  border-radius: 25px;
   padding: 0.8em 0.8em;
   max-width: 100%;
   min-width: 0;
@@ -90,26 +92,32 @@ a:-webkit-any-link {
   font-weight: 400;
   text-decoration: none;
   color: #fff;
-  background: #3257a8;
+  background: #008fb1;
   transition: 125ms;
   cursor: pointer;
 }
 
+.button__content {
+  color: #fff;
+}
+
 .button:hover {
-  background-color: #1845a6;
+  background-color: #005469;
 }
 
 .text_hover:hover {
-  color: #1845a6;
+  color: #005469;
+  font-size: 16px;
 }
 
 .intro {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   margin-left: auto;
   margin-right: auto;
   max-width: 1100px;
-  color: #ffffff;
+  min-height: 800px;
 }
 
 .intro__left {
@@ -118,19 +126,23 @@ a:-webkit-any-link {
   flex-direction: column;
   justify-content: center;
   flex-grow: 1;
+  width: 100%;
+  flex: 1 1 700px;
+  padding-top: 150px;
 }
 
 .intro__right {
-  padding-top: 15%;
+  width: 100%;
+  flex: 1 1 250px;
   position: relative;
-  min-height: 680px;
-  min-width: 50%;
+  min-height: 800px;
 }
 
-.intro__right img {
+.intro__img {
   position: absolute;
   bottom: 0;
   right: 0;
+  height: 700px;
 }
 
 .title_break {
@@ -144,9 +156,13 @@ a:-webkit-any-link {
 }
 
 .title_1 {
-  font-size: 36px;
+  font-family: trajan-sans-pro, sans-serif;
+  font-size: 40px;
   line-height: 1.25;
-  font-weight: 700;
+  font-weight: 600;
+  font-style: normal;
+  line-height: 1.25;
+  color: #008fb1;
 }
 
 .title_2 {
@@ -169,15 +185,15 @@ a:-webkit-any-link {
 }
 
 .section__inner {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 75px;
+  padding-bottom: 100px;
 }
 
 .section__title {
   position: relative;
   top: 0px;
   right: 0px;
-  margin-bottom: 50px;
+  margin-bottom: 75px;
 }
 
 .content-grid {
@@ -205,14 +221,26 @@ a:-webkit-any-link {
   overflow: hidden;
   display: flex;
   justify-content: right;
+  align-items: center;
   height: 200px;
-  margin: 0 15px 15px 0;
-  width: 100%;
-  min-width: 500px;
+  margin: 0 30px 30px 0;
+  padding: 30px 30px;
+  width: 500px;
+  height: 150px;
+  background-color: #ffffff;
+  border-radius: 150px;
 }
 
 .toothpain-card__toothpain-card-icon {
-  padding-right: 10px;
+  justify-content: left;
+  align-items: center;
+  padding: 0 20px 0 40px;
+}
+
+.toothpain-card__toothpain-card-icon {
+  justify-content: right;
+  align-items: center;
+  padding-right: 20px;
 }
 
 .details_link {
@@ -250,7 +278,6 @@ a:-webkit-any-link {
 }
 
 .doctor-photo {
-  background-color: #bdbdbd;
   position: relative;
   height: 435px;
   width: 325px;
@@ -265,6 +292,7 @@ a:-webkit-any-link {
   right: 0;
   text-align: center;
   overflow: hidden;
+  border-radius: 30px;
 }
 
 .doctor-text {
@@ -274,17 +302,17 @@ a:-webkit-any-link {
 }
 
 .doctor-name {
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.25;
   font-weight: 400;
   margin-bottom: 5px;
 }
 
 .doctor-desc {
-  font-size: 16px;
+  font-size: 14px;
   line-height: 19px;
   font-weight: 400;
-  color: #3257a8;
+  color: #008fb1;
 }
 
 .our-works {
@@ -308,7 +336,7 @@ a:-webkit-any-link {
 }
 
 .map__textblock .button {
-  max-width: 200px ;
+  max-width: 200px;
 }
 
 .bulleted-list {
@@ -320,41 +348,55 @@ a:-webkit-any-link {
 }
 
 .grey-text {
-  color: rgba(0, 0, 0, 0.5);
+  color: #4f4f4f;
 }
 
-.blue-tag {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  background: rgb(0, 23, 71);
-  background: linear-gradient(
-    135deg,
-    rgba(0, 23, 71, 1) 0%,
-    rgba(50, 87, 168, 1) 100%
-  );
-  color: #ffffff;
-  appearance: none;
-  display: inline-flex;
-  align-items: center;
-  justify-content: left;
-  box-sizing: border-box;
-  border: 0;
-  padding: 0.5em 0.5em;
-  margin: 0.2em 0 0.4em 0;
-  max-width: 100%;
-  min-width: 0;
-  text-align: center;
-  font: inherit;
-  font-size: 16px;
-  line-height: 1.25;
-  font-weight: 400;
-  text-decoration: none;
-  color: #fff;
-  transition: 125ms;
-  cursor: pointer;
+.green-text {
+  color: #008fb1;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .noIndent-bottom {
   padding-bottom: 0;
   margin-bottom: 0;
+}
+
+.reviews__card {
+  background-color: #f1f9fb;
+  padding: 30px;
+  height: 400px;
+  border-radius: 50px;
+  margin: 0 15px;
+}
+
+.reviews__reviewer-photo {
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+.reviews__reviewer {
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.reviews__reviewer-name {
+}
+
+.reviews__cardbottom {
+  padding: 20px;
+}
+
+.reviews__leftquote {
+  margin-bottom: 10px;
+}
+
+.reviews__rightquote {
+  margin-top: 10px;
+  float: right;
 }

@@ -6,14 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/styles.css" />
     <link rel="stylesheet" href="/styles_header&footer.css" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
+    <link rel="stylesheet" href="https://use.typekit.net/tkn4gna.css">
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <title>Стоматология ДентМастер</title>
@@ -25,39 +18,48 @@
         <header class="header">
           <div class="header__logo">
             <a class="logo" href="/" title="ДентМастер">
-              <img src="/img/logo_with_name.svg" alt="Лого ДентМастер" />
+              <img src="/img/logo_with_name2.svg" height="45" alt="Лого ДентМастер" />
             </a>
           </div>
           <input type="checkbox" id="menu-button" />
           <div class="header__action">
             <nav class="header__menu">
               <ul class="nav header__nav nobullets">
-                <li class="nav__item text_hover">
+                <li class="nav__item">
                   <a
-                    class="nav__link"
+                    class="nav__link text_hover"
                     href="#services"
                     title="Услуги ДентМастер"
                   >
                     УСЛУГИ
                   </a>
                 </li>
-                <li class="nav__item text_hover">
-                  <a class="nav__link" href="#contacts" title="Цены ДентМастер">
+                <li class="nav__item">
+                  <a class="nav__link text_hover" href="#contacts" title="Цены ДентМастер">
                     ЦЕНЫ
                   </a>
                 </li>
-                <li class="nav__item text_hover">
-                  <a class="nav__link" href="#doctors" title="Врачи ДентМастер">
+                <li class="nav__item">
+                  <a class="nav__link text_hover" href="#doctors" title="Врачи ДентМастер">
                     ВРАЧИ
                   </a>
                 </li>
-                <li class="nav__item text_hover">
+                <li class="nav__item">
                   <a
-                    class="nav__link"
+                    class="nav__link text_hover"
                     href="#contacts"
                     title="Контакты ДентМастер"
                   >
                     КОНТАКТЫ
+                  </a>
+                </li>
+                <li class="nav__item">
+                  <a
+                    class="nav__link text_hover"
+                    href="#contacts"
+                    title="Контакты ДентМастер"
+                  >
+                    СЛАБОВИДЯЩИМ
                   </a>
                 </li>
               </ul>
@@ -66,7 +68,7 @@
               <ul class="header__nav nobullets">
                 <li class="nav__item">
                   <div class="nav__link" title="Телефон ДентМастер">
-                    +7 (960) 454 54 54
+                    <a class="grey-text" href="tel:+79246494445">+7 (924) 649 44 45</a>
                   </div>
                 </li>
                 <li class="nav__item">
@@ -82,7 +84,7 @@
             </div>
           </div>
           <label for="menu-button" class="checkbtn">
-            <img src="/img/menu.svg" />
+            <img src="/img/menu2.svg" height="30" alt="Меню"/>
         </header>
       </div>
     </section>
@@ -111,6 +113,7 @@
             <div class="intro__right">
               <img
                 src="/img/doctors/SkakunLA.png"
+                class="intro__img"
                 alt="Ген. дирекор Скакун Л.А."
                 height="680"
               />
@@ -119,11 +122,20 @@
         </div>
       </section>
 
-      <section id="services" class="section section_theme_whiteblock">
+      <section id="about" class="section section_theme_whiteblock">
         <div class="container section__inner">
           <div class="section__title">
-            <div class="title_2">ВСЕ, ЧТО НУЖНО ДЛЯ ЗУБОВ</div>
-            <div class="title_1">НАЙДИТЕ УСЛУГУ ДЛЯ ВАС</div>
+            <div class="title_2">Немного о нас</div>
+            <div class="title_1">Почему нас выбирают?</div>
+          </div>
+        </div>
+      </section>
+
+      <section id="services" class="section_theme_lightgreenblock">
+        <div class="container section__inner">
+          <div class="section__title">
+            <div class="title_2">Все, что нужно для здоровья зубов</div>
+            <div class="title_1">Найдите услугу для вас</div>
           </div>
           <div class="content-grid">
             <div class="content-grid__column">
@@ -136,20 +148,9 @@
                   />
                 </div>
                 <div class="toothpain-card__toothpain-card-text">
-                  <div class="title_2">ЕСЛИ БОЛИТ ЗУБ</div>
-                  <div class="text_1 blue-tag">
-                    Терапевтическая стоматология
-                  </div>
+                  <div class="title_2 green-text">ЕСЛИ БОЛИТ ЗУБ</div>
                   <div class="text_1">
-                    Чувствуете зубную боль? Возможно у вас:
-                  </div>
-                  <ul class="text_1 bulleted-list">
-                    <li>Развился кариес зуба</li>
-                    <li>Начался восполительный процесс</li>
-                    <li>Случилась травма зуба</li>
-                  </ul>
-                  <div class="details_link text_1 text_hover">
-                    тогда вам сюда >
+                    Терапевтическая стоматология
                   </div>
                 </div>
               </div>
@@ -162,20 +163,9 @@
                   />
                 </div>
                 <div class="toothpain-card__toothpain-card-text">
-                  <div class="title_2">ЕСЛИ ЗУБЫ РАЗРУШЕНЫ</div>
-                  <div class="text_1 blue-tag">
-                    Хирургия и имплантология
-                  </div>
+                  <div class="title_2 green-text">ЕСЛИ ЗУБЫ РАЗРУШЕНЫ</div>
                   <div class="text_1">
-                    Зуб не подлежит востановлению?
-                  </div>
-                  <ul class="text_1 bulleted-list">
-                    <li>Удаление зубов</li>
-                    <li>Имплантация</li>
-                    <li>Сложная хирургия полости рта</li>
-                  </ul>
-                  <div class="details_link text_1 text_hover">
-                    тогда вам сюда >
+                    Хирургия и имплантология
                   </div>
                 </div>
               </div>
@@ -188,20 +178,9 @@
                   />
                 </div>
                 <div class="toothpain-card__toothpain-card-text">
-                  <div class="title_2">ЕСЛИ ЗУБЫ НЕРОВНЫЕ</div>
-                  <div class="text_1 blue-tag">
-                    Ортодонтия. Исправление привкуса
-                  </div>
+                  <div class="title_2 green-text">ЕСЛИ ЗУБЫ НЕРОВНЫЕ</div>
                   <div class="text_1">
-                    Не устраивает расположение зубов?
-                  </div>
-                  <ul class="text_1 bulleted-list">
-                    <li>Брекеты, капы</li>
-                    <li>Обслуживание систем</li>
-                    <li>Сложное исправление привкуса</li>
-                  </ul>
-                  <div class="details_link text_1 text_hover">
-                    тогда вам сюда >
+                    Ортодонтия и исправление привкуса
                   </div>
                 </div>
               </div>
@@ -217,20 +196,9 @@
                   />
                 </div>
                 <div class="toothpain-card__toothpain-card-text">
-                  <div class="title_2">ЕСЛИ НЕ НРАВИТСЯ ВИД ЗУБОВ</div>
-                  <div class="text_1 blue-tag">
-                    Ортопедия и эстетическая стоматология
-                  </div>
+                  <div class="title_2 green-text">ЕСЛИ ЗУБЫ НЕКРАСИВЫЕ</div>
                   <div class="text_1">
-                    Хотите голливудскую улыбку?
-                  </div>
-                  <ul class="text_1 bulleted-list">
-                    <li>Коронки: металлокерамика и цирконий</li>
-                    <li>Виниры, люминиры, композитные виниры</li>
-                    <li>Авторская реставрация зубов</li>
-                  </ul>
-                  <div class="details_link text_1 text_hover">
-                    тогда вам сюда >
+                    Ортопедия и эстетическая стоматология
                   </div>
                 </div>
               </div>
@@ -243,20 +211,9 @@
                   />
                 </div>
                 <div class="toothpain-card__toothpain-card-text">
-                  <div class="title_2">ЕСЛИ НУЖНА СВЕРКАЮЩАЯ УЛЫБКА</div>
-                  <div class="text_1 blue-tag">
-                    Профгигиена полости рта и отбеливание
-                  </div>
+                  <div class="title_2 green-text">ЕСЛИ ХОТИТЕ БЕЛЫЕ ЗУБЫ</div>
                   <div class="text_1">
-                    Зубной налет мешает сиять?
-                  </div>
-                  <ul class="text_1 bulleted-list">
-                    <li>Профессиональная чистка</li>
-                    <li>Удаление зубного камня</li>
-                    <li>Отбеливание зубов</li>
-                  </ul>
-                  <div class="details_link text_1 text_hover">
-                    тогда вам сюда >
+                    Профгигиена полости рта и отбеливание
                   </div>
                 </div>
               </div>
@@ -269,20 +226,9 @@
                   />
                 </div>
                 <div class="toothpain-card__toothpain-card-text">
-                  <div class="title_2">ЕСЛИ НУЖЕН ДЕТСКИЙ ВРАЧ</div>
-                  <div class="text_1 blue-tag">
-                    Детская стоматология
-                  </div>
+                  <div class="title_2 green-text">ЕСЛИ НУЖЕН ДЕТСКИЙ ВРАЧ</div>
                   <div class="text_1">
-                    Зубы ребенка не дают покоя?
-                  </div>
-                  <ul class="text_1 bulleted-list">
-                    <li>Лечение детей от 3х лет</li>
-                    <li>Исправление прикуса</li>
-                    <li>Эстетическая стоматология</li>
-                  </ul>
-                  <div class="details_link text_1 text_hover">
-                    тогда вам сюда >
+                    Детская стоматология
                   </div>
                 </div>
               </div>
@@ -291,11 +237,11 @@
         </div>
       </section>
 
-      <section id="doctors" class="section section_theme_greyblock">
+      <section id="doctors" class="section_theme_whiteblock">
         <div class="container section__inner">
           <div class="section__title">
-            <div class="title_2">ЛУЧШИЕ</div>
-            <div class="title_1">НАШИ ВРАЧИ</div>
+            <div class="title_2">Лучшие специалисты</div>
+            <div class="title_1">Наши врачи</div>
           </div>
           <div class="doctors-carousel">
             <div class="doctors-carousel__wrapper">
@@ -303,7 +249,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/SkakunLA2.png"
+                      src="/img/doctors/SkakunLA2.jpg"
                       alt="Ген. дирекор Скакун Л.А."
                       height="435"
                     />
@@ -316,7 +262,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/VeveritsaSA.png"
+                      src="/img/doctors/VeveritsaSA.jpg"
                       alt="Ген. дирекор Веверица С.А."
                       height="435"
                     />
@@ -331,7 +277,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/VlasenkoSU.png"
+                      src="/img/doctors/VlasenkoSU.jpg"
                       alt="Ген. дирекор Власенко С.Ю."
                       height="435"
                     />
@@ -344,7 +290,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/FishMG.png"
+                      src="/img/doctors/FishMG.jpg"
                       alt="Ген. дирекор Скакун Л.А."
                       height="435"
                     />
@@ -357,7 +303,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/PolishukEV.png"
+                      src="/img/doctors/PolishukEV.jpg"
                       alt="Ген. дирекор Скакун Л.А."
                       height="435"
                     />
@@ -370,7 +316,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/KolotuhinaNV.png"
+                      src="/img/doctors/KolotuhinaNV.jpg"
                       alt="Ген. дирекор Скакун Л.А."
                       height="435"
                     />
@@ -383,7 +329,7 @@
                 <div class="content-grid__column">
                   <div class="doctor-photo">
                     <img
-                      src="/img/doctors/PopovkinaTA.png"
+                      src="/img/doctors/PopovkinaTA.jpg"
                       alt="Ген. дирекор Скакун Л.А."
                       height="435"
                     />
@@ -397,67 +343,223 @@
                 </div>
               </div>
             </div>
-            <img class="prev" src="/img/button-next.svg" />
-            <img class="next" src="/img/button-next.svg" />
+            <img class="prev" src="/img/button-next2.svg" height="40"/>
+            <img class="next" src="/img/button-next2.svg" height="40"/>
           </div>
         </div>
       </section>
 
-      <section class="secton section_theme_whiteblock">
+      <section id="reviews" class="secton section_theme_whiteblock">
         <div class="container section__inner">
           <div class="section__title">
-            <div class="title_2">ОТ ПАЦИЕНТОВ</div>
-            <div class="title_1">ОТЗЫВЫ О НАС</div>
+            <div class="title_2">От пациентов</div>
+            <div class="title_1">Отзывы о нас</div>
+          </div>
+          <div class="reviews">
+              <div class="reviews__card">
+                <div class="reviews__cardtop">
+                  <img
+                  class="reviews__reviewer-photo"
+                  src="/img/reviews/Reviewer1.jpg"
+                  alt="Фото клиента."
+                  height="120"
+                  />
+                  <div class="reviews__reviewer">
+                    <div class="reviews__reviewer-name title_2 green-text">Анастасия</div>
+                    <img
+                    class="reviews__reviewer-rating"
+                    src="/img/reviews/5 stars.png"
+                    alt="Фото клиента."
+                    height="25"
+                    width="125"
+                    />
+                  </div>
+                </div>
+                <div class="reviews__cardbottom">
+                  <img
+                  class="reviews__leftquote"
+                  src="/img/reviews/left-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                  <div class="reviews__review">Text</div>
+                  <img
+                  class="reviews__rightquote"
+                  src="/img/reviews/right-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                </div>
+              </div>
+              <div class="reviews__card">
+                <div class="reviews__cardtop">
+                  <img
+                  class="reviews__reviewer-photo"
+                  src="/img/reviews/Reviewer1.jpg"
+                  alt="Фото клиента."
+                  height="120"
+                  />
+                  <div class="reviews__reviewer">
+                    <div class="reviews__reviewer-name title_2 green-text">Анастасия</div>
+                    <img
+                    class="reviews__reviewer-rating"
+                    src="/img/reviews/5 stars.png"
+                    alt="Фото клиента."
+                    height="25"
+                    width="125"
+                    />
+                  </div>
+                </div>
+                <div class="reviews__cardbottom">
+                  <img
+                  class="reviews__leftquote"
+                  src="/img/reviews/left-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                  <div class="reviews__review">Text</div>
+                  <img
+                  class="reviews__rightquote"
+                  src="/img/reviews/right-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                </div>
+              </div>
+              <div class="reviews__card">
+                <div class="reviews__cardtop">
+                  <img
+                  class="reviews__reviewer-photo"
+                  src="/img/reviews/Reviewer1.jpg"
+                  alt="Фото клиента."
+                  height="120"
+                  />
+                  <div class="reviews__reviewer">
+                    <div class="reviews__reviewer-name title_2 green-text">Анастасия</div>
+                    <img
+                    class="reviews__reviewer-rating"
+                    src="/img/reviews/5 stars.png"
+                    alt="Фото клиента."
+                    height="25"
+                    width="125"
+                    />
+                  </div>
+                </div>
+                <div class="reviews__cardbottom">
+                  <img
+                  class="reviews__leftquote"
+                  src="/img/reviews/left-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                  <div class="reviews__review">Text</div>
+                  <img
+                  class="reviews__rightquote"
+                  src="/img/reviews/right-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                </div>
+              </div>
+              <div class="reviews__card">
+                <div class="reviews__cardtop">
+                  <img
+                  class="reviews__reviewer-photo"
+                  src="/img/reviews/Reviewer1.jpg"
+                  alt="Фото клиента."
+                  height="120"
+                  />
+                  <div class="reviews__reviewer">
+                    <div class="reviews__reviewer-name title_2 green-text">Анастасия</div>
+                    <img
+                    class="reviews__reviewer-rating"
+                    src="/img/reviews/5 stars.png"
+                    alt="Фото клиента."
+                    height="25"
+                    width="125"
+                    />
+                  </div>
+                </div>
+                <div class="reviews__cardbottom">
+                  <img
+                  class="reviews__leftquote"
+                  src="/img/reviews/left-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                  <div class="reviews__review">Text</div>
+                  <img
+                  class="reviews__rightquote"
+                  src="/img/reviews/right-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                </div>
+              </div>
+              <div class="reviews__card">
+                <div class="reviews__cardtop">
+                  <img
+                  class="reviews__reviewer-photo"
+                  src="/img/reviews/Reviewer1.jpg"
+                  alt="Фото клиента."
+                  height="120"
+                  />
+                  <div class="reviews__reviewer">
+                    <div class="reviews__reviewer-name title_2 green-text">Анастасия</div>
+                    <img
+                    class="reviews__reviewer-rating"
+                    src="/img/reviews/5 stars.png"
+                    alt="Фото клиента."
+                    height="25"
+                    width="125"
+                    />
+                  </div>
+                </div>
+                <div class="reviews__cardbottom">
+                  <img
+                  class="reviews__leftquote"
+                  src="/img/reviews/left-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                  <div class="reviews__review">Text</div>
+                  <img
+                  class="reviews__rightquote"
+                  src="/img/reviews/right-quote.svg"
+                  alt="Кавычки"
+                  height="20"
+                  />
+                </div>
+              </div>
           </div>
         </div>
       </section>
 
-      <section class="our-works">
-        <div class="desease-img">
-          <img src="/img/services/caries.jpeg" alt="Кариес" />
-        </div>
-        <div class="desease-img">
-          <img src="/img/services/caries.jpeg" alt="Кариес" />
-        </div>
-        <div class="desease-img">
-          <img src="/img/services/caries.jpeg" alt="Кариес" />
-        </div>
-        <div class="desease-img">
-          <img src="/img/services/caries.jpeg" alt="Кариес" />
-        </div>
-        <div class="desease-img">
-          <img src="/img/services/caries.jpeg" alt="Кариес" />
-        </div>
-        <div class="desease-img">
-          <img src="/img/services/caries.jpeg" alt="Кариес" />
-        </div>
-      </section>
-
-      <section id="contacts" class="section section_theme_blueblock">
+      <section id="contacts" class="section_theme_lightgreenblock">
         <div class="container section__inner">
           <div class="section__title">
-            <div class="title_2">ГДЕ НАС НАЙТИ</div>
-            <div class="title_1">НАШ АДРЕС</div>
+            <div class="title_2">Где нас найти</div>
+            <div class="title_1">Наш адрес</div>
           </div>
           <div class="content-grid">
-            <div class="content-grid__column">
+            <div class="content-grid__column justify-center">
               <div class="map__textblock">
-                <div class="title_2">МЕСТО</div>
+                <div class="title_2 green-text">МЕСТО</div>
                 <div class="text_1">
                   Биробиджан,<br />
                   Пионерская 69
                 </div>
               </div>
               <div class="map__textblock">
-                <div class="title_2">ГРАФИК РАБОТЫ</div>
+                <div class="title_2 green-text">ГРАФИК РАБОТЫ</div>
                 <div class="text_1">
                   Пн-Вс: 09:00 – 18:00<br />Сб: 09:00 - 18:00
                 </div>
               </div>
               <div class="map__textblock">
-                <div class="title_2">ТЕЛЕФОНЫ</div>
+                <div class="title_2 green-text">ТЕЛЕФОНЫ</div>
                 <div class="text_1">
-                  8 (960) 454 54 54<br />8 (960) 454 54 54
+                  <a class="grey-text" href="tel:+79246494445">+7 (924) 649 44 45</a><br /><a class="grey-text" href="tel:+74262224445">+7 (42622) 2 44 45</a>
                 </div>
               </div>
               <div class="map__textblock">
@@ -607,34 +709,7 @@
         easing: "ease-out",
         perPage: {
           850: 2, // 2 items for viewport wider than 800px
-          1140: 3, // 3 items for viewport wider than 1240px
-        },
-        startIndex: 0,
-        draggable: true,
-        multipleDrag: true,
-        threshold: 20,
-        loop: false,
-        rtl: false,
-        onInit: () => {},
-        onChange: () => {},
-      });
-
-      const prev = document.querySelector(".prev");
-      const next = document.querySelector(".next");
-      prev.addEventListener("click", () => doctors.prev());
-      next.addEventListener("click", () => doctors.next());
-
-      const ourWorks = new Siema({
-        selector: ".our-works",
-        duration: 250,
-        easing: "ease-out",
-        perPage: {
-          550: 1, // 1 items for viewport wider than 800px
-          850: 2, // 2 items for viewport wider than 800px
-          1140: 3, // 3 items for viewport wider than 1240px
-          1440: 4, // 3 items for viewport wider than 1240px
-          1740: 5, // 3 items for viewport wider than 1240px
-          2040: 6, // 3 items for viewport wider than 1240px
+          1200: 3, // 3 items for viewport wider than 1240px
         },
         startIndex: 0,
         draggable: true,
@@ -645,7 +720,31 @@
         onInit: () => {},
         onChange: () => {},
       });
-      setInterval(() => ourWorks.next(), 2500);
+
+      const prev = document.querySelector(".prev");
+      const next = document.querySelector(".next");
+      prev.addEventListener("click", () => doctors.prev());
+      next.addEventListener("click", () => doctors.next());
+
+      const reviews = new Siema({
+        selector: ".reviews",
+        duration: 200,
+        easing: "ease-out",
+        perPage: {
+          850: 2, // 2 items for viewport wider than 800px
+          1200: 3, // 3 items for viewport wider than 1240px
+        },
+        startIndex: 0,
+        draggable: true,
+        multipleDrag: true,
+        threshold: 20,
+        loop: true,
+        rtl: false,
+        onInit: () => {},
+        onChange: () => {},
+      });
+
+      setInterval(() => reviews.next(), 2500);
     </script>
   </body>
 </html>
