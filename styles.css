@@ -3,6 +3,8 @@ body {
   font-family: montserrat, sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
 }
 
 div {
@@ -40,12 +42,12 @@ ul {
   color: #333333;
 }
 
-.section_theme_blueblock {
-  background: rgb(0, 23, 71);
+.section_theme_greengradientblock {
+  background: rgb(0, 82, 101);
   background: linear-gradient(
     135deg,
-    rgba(0, 23, 71, 1) 0%,
-    rgba(50, 87, 168, 1) 100%
+    rgba(0, 82, 101, 1) 0%,
+    rgba(0, 143, 177, 1) 100%
   );
   color: #ffffff;
 }
@@ -169,7 +171,7 @@ a:-webkit-any-link {
   font-size: 20px;
   line-height: 1.25;
   font-weight: 400;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .text_1 {
@@ -217,7 +219,7 @@ a:-webkit-any-link {
   justify-content: left;
 }
 
-.content-grid__toothpain-card {
+.toothpain-card {
   overflow: hidden;
   display: flex;
   justify-content: right;
@@ -399,6 +401,10 @@ a:-webkit-any-link {
   color: #008fb1;
 }
 
+.white-text {
+  color: #ffffff;
+}
+
 .justify-center {
   justify-content: center;
 }
@@ -443,4 +449,27 @@ a:-webkit-any-link {
 .reviews__rightquote {
   margin-top: 10px;
   float: right;
+}
+
+
+.benefits_card {
+  background-color: #f1f9fb;
+  height: 360px;
+  width: 270px;
+  border-radius: 50px;
+  margin: 0 15px 15px 0;
+  padding: 50px;
+}
+
+.benefits__photo{
+  margin-top: 20px;
+  border-radius: 30px;
+}
+
+.benefits__photo img{
+  border-radius: 30px;
+}
+
+.intro__factoidtable {
+  width: 90%;
 }
